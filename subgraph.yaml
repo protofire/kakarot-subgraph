@@ -1,0 +1,25 @@
+specVersion: 0.0.8
+description: subgraph for kakarot-sepolia
+repository: https://github.com/protofire/kakarot-subgraph
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: KakarotABI
+    network: kakarot-sepolia
+    source:
+      abi: KakarotABI
+      startBlock: 0
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.6
+      language: wasm/assemblyscript
+      entities:
+        - Account
+      abis:
+        - name: KakarotABI
+          file: ./abis/KakarotABI.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+      file: ./src/mapping.ts
