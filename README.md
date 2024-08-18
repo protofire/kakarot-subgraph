@@ -2,9 +2,11 @@
 
 This is a demo test version of a subgraph for tracking `Transfer` events in the Kakarot contract on the Sepolia network. The subgraph indexes account data and tracks the number of transactions for each account.
 
-## How to deploy it using Kakarot Hosted Service
+## How to deploy a subgraph using Kakarot Hosted Service
 
 You can also deploy this subgraph in the Kakarot Hosted Service
+
+https://ui.kakarot.protofire.io/
 
 ### Download the repo 
 
@@ -25,7 +27,7 @@ graph build
 
 ## Get credentials
 
-You'll need some credentials to get access to the Kakarot hosted service. You have to complete this form
+You'll need some credentials to use the Kakarot hosted service. Please complete this form if you want to get permissions to deploy a subgraph:
 
 https://forms.gle/PkTw4F8NEowhB9yC7
 
