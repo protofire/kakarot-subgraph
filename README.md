@@ -6,11 +6,8 @@ This is a demo test version of a subgraph for tracking `Transfer` events in the 
 
 - [How to Deploy a Subgraph Using Kakarot Hosted Service](#how-to-deploy-a-subgraph-using-kakarot-hosted-service)
 - [Running the Subgraph Locally with Docker Compose](#running-the-subgraph-locally-with-docker-compose)
-- [How to Install Node.js and npm](#how-to-install-nodejs-and-npm)
-- [How to Install Yarn](#how-to-install-yarn)
-- [How to Install Docker and Docker Compose](#how-to-install-docker-and-docker-compose)
-- [How to Install Graph CLI](#how-to-install-graph-cli)
 - [Additional Resources](#additional-resources)
+- [Installation Prerequisites](#installation-prerequisites)
 
 ## How to Deploy a Subgraph Using Kakarot Hosted Service
 
@@ -118,6 +115,14 @@ After deployment, you can query your subgraph using the following GraphQL endpoi
 http://localhost:8000/subgraphs/name/<your-subgraph-name>
 ```
 
+## Additional Resources
+
+For more information about subgraphs, visit The Graph documentation:
+
+[The Graph Documentation](https://thegraph.com/docs/en/developing/creating-a-subgraph/)
+
+## Installation Prerequisites
+
 ## How to Install Node.js and npm
 
 - **Description:** Node.js is a server platform for running JavaScript, which includes npm (Node Package Manager).
@@ -147,9 +152,3 @@ http://localhost:8000/subgraphs/name/<your-subgraph-name>
   ```bash
   npm install -g @graphprotocol/graph-cli
   ```
-
-## Additional Resources
-
-For more information about subgraphs, visit The Graph documentation:
-
-[The Graph Documentation](https://thegraph.com/docs/en/developing/creating-a-subgraph/)
