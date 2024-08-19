@@ -20,7 +20,6 @@ Before deploying the subgraph using the Kakarot Hosted Service, ensure that you 
 
 - [Node.js and npm](#how-to-install-nodejs-and-npm)
 - [Yarn](#how-to-install-yarn)
-- [Docker and Docker Compose](#how-to-install-docker-and-docker-compose)
 - [Graph CLI](#how-to-install-graph-cli)
 
 ### Step 1: Download the Repository
