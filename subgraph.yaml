@@ -1,25 +1,25 @@
 specVersion: 0.0.8
-description: subgraph for kakarot-sepolia
-repository: https://github.com/protofire/kakarot-subgraph
+description: subgraph for shibuya astar shiden
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
-    name: KakarotABI
-    network: kakarot-sepolia
+    name: ABI
+    network: mainnet
     source:
-      abi: KakarotABI
+      abi: ABI
       startBlock: 0
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.6
+      apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
         - Account
       abis:
-        - name: KakarotABI
-          file: ./abis/KakarotABI.json
+        - name: ABI
+          file: ./abis/ABI.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
+          receipt: true
       file: ./src/mapping.ts

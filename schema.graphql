@@ -2,4 +2,5 @@ type Account @entity {
   id: ID!
   address: Bytes!
   transactionCount: BigInt!
+  receiptLength: Int
 }
